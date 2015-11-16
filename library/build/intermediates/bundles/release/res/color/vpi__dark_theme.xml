@@ -22,4 +22,4 @@
     <!--item android:state_activated="true" android:color="@color/vpi__bright_foreground_holo_dark"/-->
     <item android:color="@color/vpi__bright_foreground_holo_dark"/> <!-- not selected -->
 </selector>
-<!-- From: file:/C:/Users/Austin%20Nelson/workspace/android/facebook-for-wear/library/src/main/res/color/vpi__dark_theme.xml -->
+<!-- From: file:/C:/Users/Austin%20Nelson/workspace/android/_Wear/Facebook-For-Android-Wear/library/src/main/res/color/vpi__dark_theme.xml -->

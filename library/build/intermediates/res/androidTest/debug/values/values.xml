@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Austin%20Nelson/workspace/android/facebook-for-wear/library/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Austin%20Nelson/workspace/android/_Wear/Facebook-For-Android-Wear/library/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <attr format="color" name="selectedColor"/>

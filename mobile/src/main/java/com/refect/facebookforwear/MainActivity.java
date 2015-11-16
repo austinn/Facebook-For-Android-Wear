@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     private ProfilePictureView profilePictureView;
 
+    private Button enterAppId;
     private Button page;
     private Button generateKeyHash;
     private EditText keyHash;
@@ -76,6 +77,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String appId = Utils.getSetting("facebook_app_id", null, getApplicationContext());
+        if(appId == null) {
+            Intent intent = new Intent(this, LauncherActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
+        FacebookSdk.setApplicationId(appId);
         FacebookSdk.sdkInitialize(getApplicationContext());
 
         callbackManager = CallbackManager.Factory.create();
@@ -86,6 +96,15 @@ public class MainActivity extends AppCompatActivity {
         page = (Button) findViewById(R.id.button);
         generateKeyHash = (Button) findViewById(R.id.btn_generate_key_hash);
         keyHash = (EditText) findViewById(R.id.edit_key_hash);
+        enterAppId = (Button) findViewById(R.id.btn_enter_app_id);
+        enterAppId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LauncherActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         dots = (CirclePageIndicator) findViewById(R.id.indicator);
         mPager = (ViewPager) findViewById(R.id.pager);

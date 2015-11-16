@@ -75,4 +75,13 @@
         android:layout_alignRight="@+id/pager"
         android:layout_alignEnd="@+id/pager" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter App Id"
+        android:id="@+id/btn_enter_app_id"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

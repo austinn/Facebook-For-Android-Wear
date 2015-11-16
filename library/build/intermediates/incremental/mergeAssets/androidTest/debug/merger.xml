@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="C:\Users\Austin Nelson\workspace\android\facebook-for-wear\library\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="C:\Users\Austin Nelson\workspace\android\facebook-for-wear\library\src\androidTest\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="C:\Users\Austin Nelson\workspace\android\_Wear\Facebook-For-Android-Wear\library\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="C:\Users\Austin Nelson\workspace\android\_Wear\Facebook-For-Android-Wear\library\src\androidTest\assets"/></dataSet></merger>

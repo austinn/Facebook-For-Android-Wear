@@ -1,6 +1,7 @@
 package com.refect.shared.utils;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -52,6 +53,21 @@ public class Utils {
     public final static String FEED_TYPE_STATUS = "status";
     public final static String FEED_TYPE_PHOTO = "photo";
     public final static String FEED_TYPE_LINK = "link";
+
+    // Store string setting
+    public static void storeSetting(String settingKey, String settingValue, Context context) {
+        SharedPreferences settings = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putString(settingKey, settingValue);
+        // Commit the edits!
+        editor.apply();
+    }
+
+    // Get string setting
+    public static String getSetting(String settingName, String defaultValue, Context context) {
+        SharedPreferences settings = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE);
+        return settings.getString(settingName, defaultValue);
+    }
 
     public static String printHashKey(Context pContext) {
         try {
