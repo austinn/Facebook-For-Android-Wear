@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:maxLines="2"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming down girl I don&apos;t live in Canada"
+            android:id="@+id/tv_comment_message"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#FFF"
+                android:alpha=".75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Austin Nelson"
+                android:id="@+id/tv_comment_user"/>
+
+            <TextView
+                android:textColor="#FFF"
+                android:alpha=".5"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7 likes"
+                android:id="@+id/tv_comment_likes"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

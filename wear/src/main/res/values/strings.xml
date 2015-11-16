@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Facebook For Wear</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="sample_status">This is an example of a really long status that you can make with your voice and you can see how it waits a few seconds and slowly scrolls down to give you time to make sure you want to post the status before automatically posting it. Unfortunately it does not post at this time and is just a demo feature.</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/circle_blue_white_border"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/facebook_blue"
+        android:layout_weight=".5"
+        android:id="@+id/vp_feed_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:background="@drawable/circle_blue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_user"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:background="@drawable/circle_blue"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv_like"
+            android:src="@drawable/like"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@+id/iv_user"
+            android:layout_toStartOf="@+id/iv_user"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:background="@drawable/circle_blue"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv_comment"
+            android:src="@drawable/comment"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/iv_user"
+            android:layout_toEndOf="@+id/iv_user"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_below="@+id/iv_user"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:alpha=".5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Austin Nelson"
+                android:id="@+id/tv_user"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I don&apos;t care what the expiration date says..."
+                android:id="@+id/tv_message"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="8dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="likes"
+                    android:id="@+id/tv_likes"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="8dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="comments"
+                    android:id="@+id/tv_comments"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/circle_blue_white_border"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:id="@+id/imageView"
+            android:layout_alignTop="@+id/iv_user"
+            android:layout_alignBottom="@+id/iv_user"
+            android:layout_toStartOf="@+id/iv_comment"/>
+    </RelativeLayout>
+
+</RelativeLayout>
